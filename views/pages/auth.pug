@@ -1,0 +1,25 @@
+doctype html
+head
+    meta(charset='UTF-8')
+    title Sign In/Up Form Transitions
+    link(rel='stylesheet' href='css/auth.css')
+    link(rel='stylesheet' href='css/toastr.css')
+    include ../layouts/_scripts
+form(onsubmit='auth(this); return false')
+    input#signin(checked='' name='action' type='radio' value='signin')
+    label(for='signin') Sign in
+    input#signup(name='action' type='radio' value='signup')
+    label(for='signup') Sign up
+    #wrapper
+        #arrow
+        input#email(placeholder='Email' name='email' type='text')
+        input#pass(placeholder='Password' name='password' type='password' )
+        input#username(placeholder='Username' name='username' type='text')
+    button(type='submit')
+        span
+            br
+            |       Sign in
+            br
+            |       Sign up
+script(src='js/auth.js')
+

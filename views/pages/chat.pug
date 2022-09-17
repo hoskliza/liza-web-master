@@ -1,0 +1,15 @@
+extends ../layouts/layout
+block content
+    block content
+        main
+            .retreat
+            .chat
+                .chat-message
+                    .chat-message__content#messages
+                .chat-input
+                    form#chat-form(onsubmit='sendRequest(); return false')
+                        input#message-text.chat-form__input(type='text', placeholder='Введите сообщение')
+                        input.chat-form__submit(type='submit', placeholder='отправить')
+block scripts
+    script(src='js/socket.io.js')
+    script(src='js/chat.js')

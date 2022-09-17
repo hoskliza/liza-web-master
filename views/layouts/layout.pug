@@ -1,0 +1,36 @@
+doctype html
+html(lang='ru')
+    head
+        include _head
+        include _scripts
+        block head
+    body
+        .sticky
+            ul
+                li
+                    a(href='/') Главное меню
+                li
+                    a(href='self-development') Саморазвитие
+                li.dropdown
+                    a.dropbtn Здоровье
+                    .dropdown-content
+                        a(href='nutrition') Питание
+                        a(href='sport') Спорт
+                        a(href='habits') Привычки
+                .foxDropdown
+                    .foxDropbtn
+                        span.iconify(data-icon='ion:logo-gitlab' data-inline='false')
+                    .foxDropdown-content
+                        a#sign-in(href='auth') Войти
+                        a#sign-out(onclick='logout(); return false') Выйти
+                        a(href='contacts') Конакты и ссылки на соцсети
+                        a(href='about') О проекте
+                span.iconify#chatClick(data-icon='mdi:file-search-outline' data-inline='false')
+        header.headerFlex
+            .FlexElement
+                h1 Fare gli occhi dolci
+            .FlexElement2
+                p Ваш помощник на пути к совершенству
+                img(src='img/img4.jpg' width='510' height='90')
+        block content
+        block scripts

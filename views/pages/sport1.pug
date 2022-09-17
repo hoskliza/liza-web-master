@@ -1,0 +1,29 @@
+extends ../layouts/layout
+block content
+    .posts
+        section.features
+            article
+                h2 Подборка тренировок для стройной фигуры
+                .postsFlex
+                    img(src='img/mainsport.jpg' width='400' height='400')
+                    p
+                        | Сколько бы Вы ни сидели на жестких диетах, сколько бы ни морили себя голодом, сколько бы ни бегали к диетологу за тонной советов по поводу правильного, здорового, приводящего в идеальную форму питания - Вы никогда не добьетесь желаемого результата без регулярных тренировок
+                        a(href='sport1') ...Читать далее...
+                a(href='sport') Раздел - Спорт
+    .posts
+        section.features
+            article
+                h2 ТРЕНИРОВКА НА СЖИГАНИЕ
+                pre.
+                iframe(width='840' height='472' src='https://www.youtube.com/embed/G0bAAf2LvuE?autoplay=0&mute=1' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+                div(style='text-align:center')
+                    button(onclick='playPause()') Play/Pause
+                    button(onclick='makeBig()') Big
+                    button(onclick='makeSmall()') Small
+                    button(onclick='makeNormal()') Normal
+                    br
+                    br
+                    video#video1(width='420')
+                        source(src='video/video1.mp4' type='video/mp4')
+                h2 ДЕЛАЕМ СТРОЙНЫЕ НОЖКИ
+                pre.

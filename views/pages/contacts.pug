@@ -1,0 +1,9 @@
+extends ../layouts/layout
+block content
+    .posts
+        section.features
+            article
+                h2 Приходите в гости:)
+                #map
+                // Async script executes immediately and must be after any DOM elements used in callback.
+                script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyD_mHCAN59G4-dVBAFWAVja_B9OTkkiRdw&callback=initMap&libraries=&v=weekly' async='')
